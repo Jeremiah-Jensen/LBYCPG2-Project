@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
 <body>
+<form action = "Register.php" method="post">
+    <table>
+        <tr><td>Last Name: <input type="text" name="LastName" /><td></tr>
 
+        <tr><td>First Name: <input type="text" name="FirstName" /><td></tr>
+
+        <tr><td>Email: <input type="text" name="Email" /><td></tr>
+
+        <tr><td>Password: <input type="password" name="Password" /><td></tr>
+
+        <tr><td>Age: <input type="number" name="Age" /><td></tr>
+
+        <tr><td>Position: <input type="radio" id = "flightattendant" name="Position" value="Flight Attendant">
+            <label for = "flightattendant">Flight Attendant </label>
+
+        <input type="radio" id = "pilot" name="Position" value="Pilot">
+            <label for = "pilot">Pilot</label>
+
+        <input type="radio" id="hrmanager" name="Position" value="HR Manager">
+            <label for = "hrmanager">HR Manager</label>
+
+        <input type="radio" id="copilot" name="Position" value="Co-pilot">
+            <label for = "copilot">Co-pilot</label>
+
+        <tr><td>Gender: <input type ="radio" id = "male" name="Gender" value="M">
+            <label for="male">Male</label>
+
+        <input type="radio" id="female" name="Gender" value="F">
+            <label for = "female">Female</label>
+    </table>
+    <input type = "submit" formaction="LogInForm.html" value="Log In">
+    <input type="submit" value="Register" />
+</form>
 </body>
 </html>
